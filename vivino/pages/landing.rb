@@ -11,6 +11,7 @@ module Vivino
 
     def initialize(driver_ref = nil)
       super(driver_ref)
+      # automatically handles genymotion error at creation time
       handle_genymotion_error
     end
 
