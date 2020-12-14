@@ -44,6 +44,7 @@ module Vivino
     # wait until 'Try us out' will be found and click on it
     #
     # @return [Vivino::Home] - an instance of Home Page object
+    # @raise [RuntimeError] if some of required elements was not found
     #
     def try_out_application
       try_out_btn.wait

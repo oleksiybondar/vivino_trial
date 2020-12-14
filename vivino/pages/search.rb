@@ -3,19 +3,33 @@ require_relative 'widgets/search_item'
 
 module Vivino
 
+  # A Page object implementation for 'Search' screen of Vivino Android application
+  #
   class Search < YetAnotherFramework::UI::AppPage
     add_element :nav_bar,        id: 'vivino.web.app.beta:id/tabs', klass: TopNavigationBar
     add_element :search_btn,     id: 'vivino.web.app.beta:id/search_vivino'
     add_element :search_query,   id: 'vivino.web.app.beta:id/editText_input'
     add_element :search_results, xpath: '//*[@resource-id="vivino.web.app.beta:id/pager"]//android.widget.FrameLayout', klass: SearchItem, type: :multiple
 
+    # enters given keyword into a wine search query
+    #
+    # @param [String] keyword - a keyword or text to search
+    # @return [void]
+    # @raise [RuntimeError] if some of required elements was not found
+    #
     def search_wine(keyword)
+      # at the initial state of Search page we can see a search input, but that's a fake, it's clickable object which
+      # transforms and after clicking on it actual search query araise
       search_btn.wait
       search_btn.click
       search_query.wait
       search_query.send_keys keyword
     end
 
+    # wait until search result will be found
+    #
+    # @return [void]
+    #
     def wait_for_results
       # wait is not implemented for a multiple type
 
@@ -27,6 +41,12 @@ module Vivino
       search_results.any?(&:present?)
     end
 
+    # checks that wine all of search results contains given keyword
+    #
+    # @param [String] keyword - a keyword check
+    # @return [void]
+    # @raise [RuntimeError] if some of required elements was not found or keyword was not found
+    #
     def search_results_has_keyword(keyword)
       search_results.each_with_index do |result, i|
         if result.has?(keyword)
