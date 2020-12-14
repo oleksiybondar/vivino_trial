@@ -108,88 +108,111 @@ please take a look download or clone and look committed report sample ``<root>/l
 ## Frameworks low level logging
 
 ```
-14-12-2020 16:26:41.381 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"android:id/button1"}
-14-12-2020 16:26:41.572 | DEBUG   | [Landing] Element was not found
-14-12-2020 16:26:41.573 | INFO    | [Landing.genymotion_err_ok_btn] Getting element presense: false
-14-12-2020 16:26:41.576 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/seehowitwork"}
-14-12-2020 16:26:41.664 | INFO    | [Landing.how_it_works_btn] Getting element presense: true
-14-12-2020 16:26:41.759 | INFO    | [Landing.how_it_works_btn] Click on an element
-14-12-2020 16:26:41.761 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:xpath=>"//*[@resource-id=\"vivino.web.app.beta:id/viewFlipperproductshowcase\"][last()]"}
-14-12-2020 16:26:42.928 | DEBUG   | [Landing] Element was not found
-14-12-2020 16:26:42.929 | INFO    | [Landing.how_it_works_slide] Getting element presense: false
-14-12-2020 16:26:43.929 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>"//*[@resource-id=\"vivino.web.app.beta:id/viewFlipperproductshowcase\"][last()]"}
-14-12-2020 16:26:45.991 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
-14-12-2020 16:26:45.992 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
-14-12-2020 16:26:46.033 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
-14-12-2020 16:26:46.053 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Get honest wine ratings on any wine from our community of millions of wine drinkers
-14-12-2020 16:26:46.056 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
-14-12-2020 16:26:46.077 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
-14-12-2020 16:26:48.652 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
-14-12-2020 16:26:48.653 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
-14-12-2020 16:26:48.654 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
-14-12-2020 16:26:49.541 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
-14-12-2020 16:26:49.555 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Shop the world's largest wine selection directly from your phone
-14-12-2020 16:26:49.556 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
-14-12-2020 16:26:49.573 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
-14-12-2020 16:26:49.620 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
-14-12-2020 16:26:49.621 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
-14-12-2020 16:26:49.622 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
-14-12-2020 16:26:50.485 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
-14-12-2020 16:26:50.501 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Scan any bottle to learn all about the wine inside
-14-12-2020 16:26:50.502 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
-14-12-2020 16:26:50.528 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
-14-12-2020 16:26:50.591 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
-14-12-2020 16:26:50.593 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
-14-12-2020 16:26:50.593 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
-14-12-2020 16:26:51.489 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
-14-12-2020 16:26:51.503 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Scan a restaurant wine list and choose your wine with confidence
-14-12-2020 16:26:51.505 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
-14-12-2020 16:26:51.536 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
-14-12-2020 16:26:51.588 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
-14-12-2020 16:26:51.589 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
-14-12-2020 16:26:51.590 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
-14-12-2020 16:26:52.372 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
-14-12-2020 16:26:52.388 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Create a free account to save your wine scans, forever
-14-12-2020 16:26:52.390 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_email"}
-14-12-2020 16:26:52.411 | INFO    | [Landing.continue_with_email] Getting element presense: true
-14-12-2020 16:26:52.411 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_facebook"}
-14-12-2020 16:26:52.429 | INFO    | [Landing.continue_with_facebook] Getting element presense: true
-14-12-2020 16:26:52.429 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_google"}
-14-12-2020 16:26:52.449 | INFO    | [Landing.continue_with_google] Getting element presense: true
-14-12-2020 16:26:52.450 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/txtTryUsOut"}
-14-12-2020 16:26:52.466 | INFO    | [Landing.try_out_btn] Getting element presense: true
-14-12-2020 16:26:52.467 | INFO    | [Landing.try_out_btn] Getting element presense: true
-14-12-2020 16:26:52.523 | INFO    | [Landing.try_out_btn] Click on an element
-14-12-2020 16:26:52.525 | DEBUG   | [Home] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
-14-12-2020 16:26:53.161 | DEBUG   | [Home] Element was not found
-14-12-2020 16:26:53.161 | INFO    | [Home.user_name] Getting element presense: false
-14-12-2020 16:26:54.166 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
-14-12-2020 16:26:54.197 | DEBUG   | [Home.user_name] Element was not found
-14-12-2020 16:26:54.197 | INFO    | [Home.user_name] Getting element presense: false
-14-12-2020 16:26:55.203 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
-14-12-2020 16:26:55.528 | DEBUG   | [Home.user_name] Element was not found
-14-12-2020 16:26:55.528 | INFO    | [Home.user_name] Getting element presense: false
-14-12-2020 16:26:56.534 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
-14-12-2020 16:26:57.650 | DEBUG   | [Home.user_name] Element was not found
-14-12-2020 16:26:57.651 | INFO    | [Home.user_name] Getting element presense: false
-14-12-2020 16:26:58.658 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
-14-12-2020 16:26:59.286 | INFO    | [Home.user_name] Getting element presense: true
-14-12-2020 16:26:59.287 | INFO    | [Home.user_name] Getting element presense: true
-14-12-2020 16:27:00.198 | INFO    | [Home.user_name] Getting element text: Welcome to Vivino
-14-12-2020 16:27:00.205 | DEBUG   | [Home] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/tabs"}
-14-12-2020 16:27:00.232 | DEBUG   | [Home.nav_bar] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/wine_explorer_tab"}
-14-12-2020 16:27:00.252 | INFO    | [Home.nav_bar.search] Getting element presense: true
-14-12-2020 16:27:00.252 | INFO    | [Home.nav_bar.search] Getting element presense: true
-14-12-2020 16:27:00.316 | INFO    | [Home.nav_bar.search] Click on an element
-14-12-2020 16:27:00.318 | DEBUG   | [Search] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/search_vivino"}
-14-12-2020 16:27:01.174 | INFO    | [Search.search_btn] Getting element presense: true
-14-12-2020 16:27:01.174 | INFO    | [Search.search_btn] Getting element presense: true
-14-12-2020 16:27:01.177 | INFO    | [Search.search_btn] Getting element presense: true
-14-12-2020 16:27:01.177 | INFO    | [Search.search_btn] Getting element presense: true
-14-12-2020 16:27:04.487 | INFO    | [Search.search_btn] Click on an element
-14-12-2020 16:27:04.488 | DEBUG   | [Search] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/editText_input"}
-14-12-2020 16:27:04.521 | INFO    | [Search.search_query] Getting element presense: true
-14-12-2020 16:27:04.521 | INFO    | [Search.search_query] Getting element presense: true
-14-12-2020 16:27:05.197 | INFO    | [Search.search_query] Sending bordo input to an element
-14-12-2020 16:27:05.199 | DEBUG   | [Search] Performing elements search, type: multiple, locator: {:xpath=>"//*[@resource-id=\"vivino.web.app.beta:id/pager\"]//android.widget.FrameLayout"}
+14-12-2020 22:56:20.878 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"android:id/button1"}
+14-12-2020 22:56:20.933 | DEBUG   | [Landing] Element was not found!
+14-12-2020 22:56:20.933 | INFO    | [Landing.genymotion_err_ok_btn] Getting element presense: false
+14-12-2020 22:56:20.937 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/seehowitwork"}
+14-12-2020 22:56:20.980 | INFO    | [Landing.how_it_works_btn] Getting element presense: true
+14-12-2020 22:56:21.068 | INFO    | [Landing.how_it_works_btn] Click on an element
+14-12-2020 22:56:21.069 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:xpath=>"//*[@resource-id=\"vivino.web.app.beta:id/viewFlipperproductshowcase\"][last()]"}
+14-12-2020 22:56:22.106 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
+14-12-2020 22:56:22.106 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
+14-12-2020 22:56:22.477 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
+14-12-2020 22:56:22.497 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Get honest wine ratings on any wine from our community of millions of wine drinkers
+14-12-2020 22:56:22.499 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
+14-12-2020 22:56:22.520 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
+14-12-2020 22:56:22.572 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
+14-12-2020 22:56:22.574 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
+14-12-2020 22:56:22.574 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
+14-12-2020 22:56:23.484 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
+14-12-2020 22:56:23.525 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Shop the world's largest wine selection directly from your phone
+14-12-2020 22:56:23.525 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
+14-12-2020 22:56:23.584 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
+14-12-2020 22:56:23.671 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
+14-12-2020 22:56:23.673 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
+14-12-2020 22:56:23.674 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
+14-12-2020 22:56:24.632 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
+14-12-2020 22:56:24.655 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Scan any bottle to learn all about the wine inside
+14-12-2020 22:56:24.656 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
+14-12-2020 22:56:24.683 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
+14-12-2020 22:56:25.563 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
+14-12-2020 22:56:25.564 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
+14-12-2020 22:56:25.569 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
+14-12-2020 22:56:25.609 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
+14-12-2020 22:56:25.629 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Scan a restaurant wine list and choose your wine with confidence
+14-12-2020 22:56:25.630 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/next"}
+14-12-2020 22:56:25.693 | INFO    | [Landing.how_it_works_slide.next_btn] Getting element presense: true
+14-12-2020 22:56:25.753 | INFO    | [Landing.how_it_works_slide.next_btn] Click on an element
+14-12-2020 22:56:25.755 | INFO    | [Landing.how_it_works_slide] Getting element presense: true
+14-12-2020 22:56:25.755 | DEBUG   | [Landing.how_it_works_slide] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/description\"] | .//android.widget.TextView"}
+14-12-2020 22:56:26.531 | INFO    | [Landing.how_it_works_slide.description] Getting element presense: true
+14-12-2020 22:56:26.548 | INFO    | [Landing.how_it_works_slide.description] Getting element text: Create a free account to save your wine scans, forever
+14-12-2020 22:56:26.549 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_email"}
+14-12-2020 22:56:26.572 | INFO    | [Landing.continue_with_email] Getting element presense: true
+14-12-2020 22:56:26.572 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_facebook"}
+14-12-2020 22:56:26.593 | INFO    | [Landing.continue_with_facebook] Getting element presense: true
+14-12-2020 22:56:26.593 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/continue_with_google"}
+14-12-2020 22:56:26.614 | INFO    | [Landing.continue_with_google] Getting element presense: true
+14-12-2020 22:56:26.615 | DEBUG   | [Landing] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/txtTryUsOut"}
+14-12-2020 22:56:26.639 | INFO    | [Landing.try_out_btn] Getting element presense: true
+14-12-2020 22:56:26.639 | INFO    | [Landing.try_out_btn] Getting element presense: true
+14-12-2020 22:56:26.726 | INFO    | [Landing.try_out_btn] Click on an element
+14-12-2020 22:56:26.727 | DEBUG   | [Home] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
+14-12-2020 22:56:27.358 | DEBUG   | [Home] Element was not found!
+14-12-2020 22:56:27.358 | INFO    | [Home.user_name] Getting element presense: false
+14-12-2020 22:56:28.365 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
+14-12-2020 22:56:28.394 | DEBUG   | [Home.user_name] Element was not found!
+14-12-2020 22:56:28.395 | INFO    | [Home.user_name] Getting element presense: false
+14-12-2020 22:56:29.400 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
+14-12-2020 22:56:29.489 | DEBUG   | [Home.user_name] Element was not found!
+14-12-2020 22:56:29.489 | INFO    | [Home.user_name] Getting element presense: false
+14-12-2020 22:56:30.493 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
+14-12-2020 22:56:36.904 | DEBUG   | [Home.user_name] Element was not found!
+14-12-2020 22:56:36.905 | INFO    | [Home.user_name] Getting element presense: false
+14-12-2020 22:56:37.909 | DEBUG   | [Home.user_name] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/user_name"}
+14-12-2020 22:56:39.622 | INFO    | [Home.user_name] Getting element presense: true
+14-12-2020 22:56:39.623 | INFO    | [Home.user_name] Getting element presense: true
+14-12-2020 22:56:39.659 | INFO    | [Home.user_name] Getting element text: Vivino User
+14-12-2020 22:56:39.664 | DEBUG   | [Home] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/tabs"}
+14-12-2020 22:56:39.726 | DEBUG   | [Home.nav_bar] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/wine_explorer_tab"}
+14-12-2020 22:56:39.770 | INFO    | [Home.nav_bar.search] Getting element presense: true
+14-12-2020 22:56:39.770 | INFO    | [Home.nav_bar.search] Getting element presense: true
+14-12-2020 22:56:39.862 | INFO    | [Home.nav_bar.search] Click on an element
+14-12-2020 22:56:39.864 | DEBUG   | [Search] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/search_vivino"}
+14-12-2020 22:56:41.449 | INFO    | [Search.search_btn] Getting element presense: true
+14-12-2020 22:56:41.449 | INFO    | [Search.search_btn] Getting element presense: true
+14-12-2020 22:56:41.451 | INFO    | [Search.search_btn] Getting element presense: true
+14-12-2020 22:56:41.451 | INFO    | [Search.search_btn] Getting element presense: true
+14-12-2020 22:56:41.951 | INFO    | [Search.search_btn] Click on an element
+14-12-2020 22:56:41.951 | DEBUG   | [Search] Performing elements search, type: single, locator: {:id=>"vivino.web.app.beta:id/editText_input"}
+14-12-2020 22:56:44.056 | INFO    | [Search.search_query] Getting element presense: true
+14-12-2020 22:56:44.056 | INFO    | [Search.search_query] Getting element presense: true
+14-12-2020 22:56:44.130 | INFO    | [Search.search_query] Sending bordo input to an element
+14-12-2020 22:56:44.131 | DEBUG   | [Search] Performing elements search, type: multiple, locator: {:xpath=>"//*[@resource-id=\"vivino.web.app.beta:id/pager\"]//android.widget.FrameLayout"}
+14-12-2020 22:56:54.683 | INFO    | [Search.search_results[0]] Getting element presense: true
+14-12-2020 22:56:54.684 | DEBUG   | [Search.search_results[0]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.725 | INFO    | [Search.search_results[0].name] Getting element presense: true
+14-12-2020 22:56:54.741 | INFO    | [Search.search_results[0].name] Getting element text: Rioja Bordon Gran Reserva
+14-12-2020 22:56:54.741 | INFO    | Search result 0 contains given bordo
+14-12-2020 22:56:54.742 | DEBUG   | [Search.search_results[1]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.766 | INFO    | [Search.search_results[1].name] Getting element presense: true
+14-12-2020 22:56:54.784 | INFO    | [Search.search_results[1].name] Getting element text: Rioja Bordon Gran Reserva
+14-12-2020 22:56:54.784 | INFO    | Search result 1 contains given bordo
+14-12-2020 22:56:54.785 | DEBUG   | [Search.search_results[2]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.810 | INFO    | [Search.search_results[2].name] Getting element presense: true
+14-12-2020 22:56:54.823 | INFO    | [Search.search_results[2].name] Getting element text: Rioja Bordon Crianza
+14-12-2020 22:56:54.823 | INFO    | Search result 2 contains given bordo
+14-12-2020 22:56:54.824 | DEBUG   | [Search.search_results[3]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.851 | INFO    | [Search.search_results[3].name] Getting element presense: true
+14-12-2020 22:56:54.866 | INFO    | [Search.search_results[3].name] Getting element text: Rioja Bordon Crianza
+14-12-2020 22:56:54.866 | INFO    | Search result 3 contains given bordo
+14-12-2020 22:56:54.866 | DEBUG   | [Search.search_results[4]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.893 | INFO    | [Search.search_results[4].name] Getting element presense: true
+14-12-2020 22:56:54.909 | INFO    | [Search.search_results[4].name] Getting element text: Rioja Bordon Reserva
+14-12-2020 22:56:54.909 | INFO    | Search result 4 contains given bordo
+14-12-2020 22:56:54.910 | DEBUG   | [Search.search_results[5]] Performing elements search, type: single, locator: {:xpath=>".//*[@resource-id=\"vivino.web.app.beta:id/winename_textView\"]"}
+14-12-2020 22:56:54.940 | INFO    | [Search.search_results[5].name] Getting element presense: true
+14-12-2020 22:56:54.958 | INFO    | [Search.search_results[5].name] Getting element text: Rioja Bordon Reserva
+14-12-2020 22:56:54.958 | INFO    | Search result 5 contains given bordo
+
 ```
