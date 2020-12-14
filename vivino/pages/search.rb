@@ -46,7 +46,7 @@ module Vivino
       timeout = Time.now + YetAnotherFramework::Config.wait_timeout
       # if empty then it will trigger a find_itself loop automatically
       # NOTE Rubie's Timeout fails find_elements loop, so using alternative implementation
-      sleep 1 while search_results.size.zero? && Time.now < timeout
+      sleep(1) until !search_results.size.zero? || Time.now > timeout
 
       search_results.any?(&:present?)
     end
