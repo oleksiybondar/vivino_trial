@@ -7,6 +7,12 @@ require 'selenium-webdriver'
 
 module YetAnotherFramework
   module UI
+
+    # a mix of Container and Element classes, basically it's an advanced version of Element class which may contains
+    # child elements
+    #
+    # NOTE this class was not designed for a standalone usage, it should be inherited by a concrete widget
+    # #
     class Widget < Container
 
       include Named

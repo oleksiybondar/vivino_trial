@@ -2,11 +2,19 @@ module YetAnotherFramework
   module UI
     module ContentSwitcher
 
+      # switches application content to NATIVE APP
+      #
+      # @return [void]
+      #
       def switch_to_native_content
         @driver_ref.set_context('NATIVE_APP')
         @logger.debug("[#{@__fullname__}] Switching to Native App context")
       end
 
+      # switches application content to currently active web content
+      #
+      # @return [void]
+      #
       def switch_to_web_content
         contexts = wait_for_context
 
@@ -32,19 +40,27 @@ module YetAnotherFramework
 
       private
 
+      # waits until contexts amount will be more than 1
+      #
+      # return [Array<string>]
+      #
       def wait_for_context
         contexts = []
-        Timeout::timeout(YetAnotherFramework::Config.wait_timeout) do
-            while contexts.size < 2
-              sleep 1
-              contexts = @driver_ref.available_contexts rescue %w{NATIVE_APP}
-            end
+        Timeout.timeout(YetAnotherFramework::Config.wait_timeout) do
+          while contexts.size < 2
+            sleep 1
+            contexts = @driver_ref.available_contexts rescue %w{NATIVE_APP}
+          end
         end
         contexts
       rescue TimeoutError
         %w{NATIVE_APP}
       end
 
+      # Searches currently active web context among array of web contexts
+      #
+      # @param [Array<String>] contexts
+      #
       def select_web_context(contexts)
         contexts.each do |context|
           begin

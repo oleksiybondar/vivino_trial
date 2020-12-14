@@ -2,13 +2,15 @@ require 'UI/modules/intractions'
 
 module YetAnotherFramework
   module UI
+
+    # this module implements Decorator page object pattern for Element class, it decorates all actions methods which
+    # changes original behaviour by adding a mandatory element reference presence verification and StaleReference error
+    # handling and retry action
+    #
     module IntractionsDecorator
 
       include Intractions
 
-      # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-      # decorator itself
-      # = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
       Intractions.instance_methods.each do |method|
         alias_method "_#{method}".to_sym, method
@@ -19,10 +21,10 @@ module YetAnotherFramework
           # exec real action
           #
           send("_#{method}", *args)
-        rescue Selenium::WebDriver::Error::StaleElementReferenceError, Selenium::WebDriver::Error::InvalidElementStateError => e
+        rescue Selenium::WebDriver::Error::StaleElementReferenceError
           # decorating Stale reference error handling
           #
-          @logger.debug("[#{@__fullname__}] #{e.class} error intercepted")
+          @logger.debug("[#{@__fullname__}] StaleElementReferenceError error intercepted")
           resolve_stale_reference_error
 
           # yet another presence verification, since element may not be found after stale reference handler
