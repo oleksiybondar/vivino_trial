@@ -28,5 +28,4 @@ Feature: Vivino Trial
     Examples:
       | keyword |
       | bordo   |
-      | Italy   |
-      | red     |
+    # TODO add or adjust keywors
