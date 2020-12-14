@@ -1,0 +1,6 @@
+
+source 'http://rubygems.org'
+
+gem 'cucumber'
+gem 'rspec'
+gem 'yet-another-framework', require: true, path: './yet-another-framework'
