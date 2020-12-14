@@ -1,19 +1,17 @@
 :caps:
   :platformName: "android"
   :platformVersion: "10"
+# TODO Please adjust me before execute!!!
+  # Geny Motion
+  :deviceName: "Google Pixel 3"
+#  # Android Studio
+#  :avd: "Pixel_3a_API_30_x86"
+#  :deviceName: "Pixel 3a"
+  :appWaitActivity: "com.sphinx_solution.activities.OOTB2"
 
 :appium_server:
   :server_url: "http://0.0.0.0:4723/wd/hub"
   :export_session: false
   :port: 4723
-
-# TODO Please adjust me before execute!!!
-#  # Geny Motion
-  :deviceName: "Google Pixel 3"
-  # Android Studio
-#  :avd: "Pixel_3a_API_30_x86"
-#  :deviceName: "Pixel 3a"
-
-  :appWaitActivity: "com.sphinx_solution.activities.OOTB2"
 
 :log_level: :debug
