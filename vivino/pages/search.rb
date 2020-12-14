@@ -9,7 +9,7 @@ module Vivino
     add_element :search_query,   id: 'vivino.web.app.beta:id/editText_input'
     add_element :search_results, xpath: '//*[@resource-id="vivino.web.app.beta:id/pager"]//android.widget.FrameLayout', klass: SearchItem, type: :multiple
 
-    def serch_wine(keyword)
+    def search_wine(keyword)
       search_btn.wait
       search_btn.click
       search_query.wait

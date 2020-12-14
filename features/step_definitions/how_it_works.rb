@@ -44,7 +44,7 @@ Then('Search query is shown') do
 end
 
 When('User enters a {string}') do |keyword|
-  @page.serch_wine keyword
+  @page.search_wine keyword
 end
 
 Then('Search results are shown') do
