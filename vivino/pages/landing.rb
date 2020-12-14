@@ -21,6 +21,8 @@ module Vivino
     add_element :how_it_works_btn, id: 'vivino.web.app.beta:id/seehowitwork'
 
     # slider
+    # a Frameworks Page Object API was implemented with keeping in mind about Composite/TreeView structure of PO
+    # implementation, adding nested Page object inside of current one
     add_element :how_it_works_slide, xpath: '//*[@resource-id="vivino.web.app.beta:id/viewFlipperproductshowcase"][last()]', klass: HowItWorksSlide
     # # last slide buttons
     add_element :continue_with_email,    id: 'vivino.web.app.beta:id/continue_with_email'

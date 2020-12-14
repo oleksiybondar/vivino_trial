@@ -6,9 +6,19 @@ module Vivino
   # A Page object implementation for 'Search' screen of Vivino Android application
   #
   class Search < YetAnotherFramework::UI::AppPage
+
+    # a Frameworks Page Object API was implemented with keeping in mind about Composite/TreeView structure of PO
+    # implementation, adding nested Page object inside of current one
+    #
+    # a reusable component to can be used an any pare with Top navigation bar
     add_element :nav_bar,        id: 'vivino.web.app.beta:id/tabs', klass: TopNavigationBar
     add_element :search_btn,     id: 'vivino.web.app.beta:id/search_vivino'
     add_element :search_query,   id: 'vivino.web.app.beta:id/editText_input'
+
+    # a Frameworks Page Object API was implemented with keeping in mind about Composite/TreeView structure of PO
+    # implementation, adding nested Page object inside of current one
+    #
+    # each result has exactly the same structure
     add_element :search_results, xpath: '//*[@resource-id="vivino.web.app.beta:id/pager"]//android.widget.FrameLayout', klass: SearchItem, type: :multiple
 
     # enters given keyword into a wine search query
