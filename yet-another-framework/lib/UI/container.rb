@@ -91,7 +91,7 @@ module YetAnotherFramework
       #
       # @param [WebElement|MobileElement|Array<WebElement|MobileElement>] driver_ref
       # @param [Class] klass - class to instantiate
-      # @param [Hosh] locator - search criterias
+      # @param [Hash] locator - search criteria
       # @param [Hash] options - helper options
       # @return [Widget|Element]
       #
