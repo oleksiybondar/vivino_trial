@@ -63,8 +63,9 @@ The implementations covers following goals:
 
 1. adjust Appium capabilities in 'features/env/config.yaml'
 
-1.1 if you set up Android studio from scratch, then default configuration fits for you  
 2. in a project folder run 'cucumber --format html --out report.html'
+
+**NOTE** I found Genymotion extremely unstable environments it often hangs, at least under Mac OS Big Sur, so Android SDK is preferable
 
 # Framework Implementation Notes
 
@@ -97,7 +98,8 @@ A framework logger was implemented using Listener Design Pattern in order to add
 
 ## execution video
 
-
+Android SDK https://www.dropbox.com/s/ddy43pfggitztdr/Android_SDK.mov?dl=0
+Genymotion  https://www.dropbox.com/s/yd5rmwrmlzc2oxg/Genymotion.mov?dl=0
 
 ## cucumber build it reporting tool
 

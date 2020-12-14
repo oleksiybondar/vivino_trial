@@ -1,6 +1,8 @@
 :caps:
   :platformName: "android"
   :platformVersion: "10"
+
+# TODO Please adjust me before execute!!!
 #  # Geny Motion
   :deviceName: "Google Pixel 3"
   # Android Studio
