@@ -26,10 +26,12 @@ When('User click \'Try us out\'') do
   @page = @page.try_out_application
 end
 
-Then('User see a {string} message') do |message|
+Then('User see a {string} or {string} message') do |message1, message2|
   # this one is time consuming so page may loads for a quite long time
   @page.user_name.wait(30)
-  expect(@page.user_name.text).to eq(message)
+
+  # when there is Google APIs we can see Welcome user but when there is no Google APIs, used build in user
+  expect([message1, message2]).to include(@page.user_name.text)
 end
 
 When('User navigates to a wine search') do

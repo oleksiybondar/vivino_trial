@@ -18,7 +18,7 @@ Feature: Vivino Trial
     Then  Slide description is 'Create a free account to save your wine scans, forever'
     And   Account creation buttons shown
     When  User click 'Try us out'
-    Then  User see a 'Welcome to Vivino' message
+    Then  User see a 'Welcome to Vivino' or 'Vivino User' message
     When  User navigates to a wine search
     Then  Search query is shown
     When  User enters a '<keyword>'
