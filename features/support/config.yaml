@@ -2,6 +2,11 @@
   :platformName: "android"
   :platformVersion: "10"
 
+:appium_server:
+  :server_url: "http://0.0.0.0:4723/wd/hub"
+  :export_session: false
+  :port: 4723
+
 # TODO Please adjust me before execute!!!
 #  # Geny Motion
   :deviceName: "Google Pixel 3"
