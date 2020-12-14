@@ -33,10 +33,17 @@ module Vivino
     # Geny motion specific(see misc/genymotion_err.png), not reproducible on Android Studio
     add_element :genymotion_err_ok_btn, id: 'android:id/button1'
 
+    # closes Android warning about missing Google Appssee misc/genymotion_err.png) if it exists
+    #
+    # @return [void]
     def handle_genymotion_error
       genymotion_err_ok_btn.click if genymotion_err_ok_btn.present?
     end
 
+    # wait until 'Try us out' will be found and click on it
+    #
+    # @return [Vivino::Home] - an instance of Home Page object
+    #
     def try_out_application
       try_out_btn.wait
       try_out_btn.click
